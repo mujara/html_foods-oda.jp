@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="home" class="home is-pageFade">
+<div class="page-transition"></div>
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__headBox">
+
+		<div id="pageTopFix">
+			<div class="inBase clearfix">
+				<dl class="header__siteTitleBox"><a href="<?php echo home_url(); ?>">
+					<dt><h1 class="header__siteTitle"><img src="img/common/siteTitle.svg" alt="ODA オーディエー株式会社" /></h1></dt>
+					<dd><span>世界の食材28000種</span></dd>
+				</a></dl>
+
+				<nav class="globalNavi">
+					<ul class="globalNavi__menu__main">
+						<li><span>ODAについて</span>
+							<ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/policy">ODAの5つの方針</a></li>
+								<li><a href="<?php echo home_url(); ?>/logistics">物流システム・会社倉庫</a></li>
+								<li><a href="<?php echo home_url(); ?>/message">代表メッセージ</a></li>
+							</ul> 
+			            		</li>
+						<li><a href="<?php echo home_url(); ?>/service">事業内容</a></li>
+						<li><a href="<?php echo home_url(); ?>/safety">安心安全の取り組み</a></li>
+						<li><span>店舗情報</span>
+							<ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/kizuichiba">木津市場店</a></li>
+								<li><a href="<?php echo home_url(); ?>/kyoto">京都本店</a></li>
+								<li><a href="<?php echo home_url(); ?>/higashishinsaibashioda">東心斎橋小田店</a></li>
+								<li><a href="<?php echo home_url(); ?>/kobemotomachi">神戸元町店</a></li>
+							</ul> 
+			            		</li>
+						<li><span>企業情報</span>
+							<ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+								<li><a href="<?php echo home_url(); ?>/history">沿革</a></li>
+							</ul> 
+			            		</li>
+						<li><a href="<?php echo home_url(); ?>/sdgs">SDGs</a></li>
+						<li><a href="<?php echo home_url(); ?>/recruitment">採用情報</a></li>
+					</ul>
+					<div class="globalNavi__menu__head"><a href="<?php echo home_url(); ?>/business">新規お取引をご希望の業者様へ</a></div>
+				<!-- /.globalNavi --></nav>
+				<div class="header__jfsaBox"><figure><a href="https://www.jfsaweb.com/jp/home" target="_blank"><img src="img/common/logoJfsa.png" alt="JFSA" /></a></figure><span>高品質で<br>値ごろ感あり</span></div>
+				<div class="header__dnvglBox"><figure><a href="https://www.dnv.jp/services/iso-22000-5173/" target="_blank"><img src="img/common/imgDnvgl.png" alt="DNV・GL" /></a></figure><span>本社・京都本店<br>木津営業所にて<br>ISO22000認証取得</span></div>
+				<div class="header__contactBox"><a href="<?php echo home_url(); ?>/contact">お問い合わせは<br>こちら</a></div>
+			<!-- /.inBase --></div>
+
+			
+
+		<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<dl class="globalNaviSmall__siteTitleBox">
+										<dt><h1 class="header__siteTitle"><img src="img/common/siteTitle.svg" alt="ODA オーディエー株式会社" /></h1></dt>
+										<dd><span>世界の食材28000種</span></dd>
+									</dl>
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+										<li><span>ODAについて</span>
+											<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/policy">ODAの5つの方針</a></li>
+												<li><a href="<?php echo home_url(); ?>/logistics"><small>物流システム・会社倉庫</small></a></li>
+												<li><a href="<?php echo home_url(); ?>/message">代表メッセージ</a></li>
+											</ul> 
+							            		</li>
+										<li><a href="<?php echo home_url(); ?>/service">事業内容</a></li>
+										<li><a href="<?php echo home_url(); ?>/safety">安心安全の取り組み</a></li>
+										<li><span>店舗情報</span>
+											<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/kizuichiba">木津市場店</a></li>
+												<li><a href="<?php echo home_url(); ?>/kyoto">京都本店</a></li>
+												<li><a href="<?php echo home_url(); ?>/higashishinsaibashioda">東心斎橋小田店</a></li>
+												<li><a href="<?php echo home_url(); ?>/kobemotomachi">神戸元町店</a></li>
+											</ul> 
+							            		</li>
+										<li><span>企業情報</span>
+											<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+												<li><a href="<?php echo home_url(); ?>/history">沿革</a></li>
+											</ul> 
+							            		</li>
+										<li><a href="<?php echo home_url(); ?>/sdgs">SDGs</a></li>
+										<<li><a href="<?php echo home_url(); ?>/recruitment">採用情報</a></li>
+										<li><a href="<?php echo home_url(); ?>/business">新規お取引をご希望の業者様へ</a></li>
+										<li><a href="<?php echo home_url(); ?>/privacypolicy">プラシバシーポリシー</a></li>
+										<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+        <!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+    <section class="mainVisual --typeScrollFadeIn">
+	<div class="inBase clearfix">
+		<figure class="mainVisual__image">
+			<img src="img/home/imgMainVisual.jpg" alt="オーディエー株式会社 メインイメージ" class="hidden-sp" />
+			<img src="img/home/imgMainVisual_sp.jpg" alt="オーディエー株式会社 メインイメージ" class="hidden-pc" />
+		</figure>
+		<div class="mainVisual__slideBox">
+
+						<!-- スライダーここから -->
+						<div class="sliderBox--typeFullPage">
+						<!-- Slider全体のコンテナ -->
+						<div class="swiper">
+						    <!-- Sliderの内包コンテナ -->
+						    <div class="swiper-wrapper">
+						        <!-- Slideさせたいコンテンツ -->
+						        <div class="swiper-slide">
+								<img src="img/home/imgMainVisual01.jpg" alt="スライド写真" />
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<img src="img/home/imgMainVisual02.jpg" alt="スライド写真" />
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<img src="img/home/imgMainVisual03.jpg" alt="スライド写真" />
+							<!-- /.swiper-slide --></div>
+						        <div class="swiper-slide">
+								<img src="img/home/imgMainVisual04.jpg" alt="スライド写真" />
+							<!-- /.swiper-slide --></div>
+						    <!-- /.swiper-wrapper --></div>
+						<!-- /.swiper --></div>
+						<!-- Sliderここまで -->
+						<!-- /.sliderBox--typeFullPage01 --></div>
+						<!-- スライダーここまで -->
+
+		<!-- /.mainVisual__slideBox --></div>
+		<div class="mainVisual__decoration">
+			<figure>
+				<img src="img/home/imgMainVisual.png" alt="オーディエー株式会社" class="hidden-sp" />
+				<img src="img/home/imgMainVisual_sp.png" alt="オーディエー株式会社" class="hidden-pc" />
+			</figure>
+		<!-- /.mainVisual__decoration --></div>
+		<div class="mainVisual__copyBox">
+	    		<h2>おいしいものを、<br>おいしいまま届ける。</h2>
+			<p>総合フードサービスのODA</p>
+        	<!-- /.mainVisual__copyBox --></div>
+        <!-- /.inBase --></div>
+    <!-- /.mainVisual --></section>
+	
+	<div id="contents" class="clearfix --typeScrollFadeIn">
+		<div class="inBase clearfix">
+			<div class="homeHeadBox">
+				<div class="mainVisual__decorationCopy"><img src="img/home/imgMainVisualCopy.svg" alt="Safe and secure ingredients" /></div>
+				<div class="inBase clearfix">
+					<div class="homeNewsBox">
+						<div class="homeNewsBox__titleBox">
+							<h3 class="homeNewsBox__title">News</h3>
+							<a href="<?php echo home_url(); ?>/news">一覧を見る</a>
+						<!-- /.homeNewsBox__titleBox --></div>
+						<div class="homeNewsBox__content">
+							<ul>
+								<li><a href="#"><span>2024.00.00</span><span>テキストテキストテキストテキストテキスト</span></a></li>
+							</ul>
+						<!-- /.homeNewsBox__titleBox --></div>
+			        	<!-- /.homeNewsBox --></div>
+
+					<div class="homeAboutBox">
+						<h2 class="homeAboutBox__copy">食を通して、<br class="hidden-pc">生産者と消費者を繋ぐ</h2>
+						<div class="homeAboutBox__title">
+							<div class="title--type01">
+								<small>About Us</small>
+								<h3>私たちについて</h3>
+							<!-- /.title--type01 --></div>
+						<!-- /.homeAboutBox__title --></div>
+						<p class="homeAboutBox__content">
+							ODAは1952年に創業して以来、業務用食材の流通を中心に<br class="hidden-sp">
+							生産者や食品メーカーと消費者をつなぐ架け橋となってきました。<br><br class="hidden-pc"><br class="hidden-pc">
+							安全安心を最も大切にする創業からの方針変わらないまま、<br class="hidden-sp">
+							より多くの人や場所へ安定して食品を流通させるべく、<br class="hidden-sp">
+							一般の方々が手に取りやすい直営店舗やネットでの販売にも取り組んでいます。<br><br class="hidden-pc"><br class="hidden-pc">
+							おいしいものを<br class="hidden-pc">おいしいまま、早く、<br class="hidden-pc">安定して届けたい。<br><br class="hidden-pc"><br class="hidden-pc">
+							ODAは業務用食材の専門家から総合フードサービスの会社へと進化し、<br class="hidden-sp">
+							お店や食卓に並ぶ食材の品質を守っていきます。
+						<!-- /.homeAboutBox__content --></p>
+						<!--<div class="homeAboutBox__button">
+							<div class="button--type01">
+								<a href="<?php echo home_url(); ?>/policy">詳しくみる</a>
+							<!-- /.button--type01 --</div>
+						<!-- /.homeAboutBox__button --</div>-->
+						<figure class="homeAboutBox__image01"><img src="img/home/imgAbout01.png" alt="オーディエー株式会社" /></figure>
+						<figure class="homeAboutBox__image02">
+							<img src="img/home/imgAbout02.png" alt="オーディエー株式会社" class="hidden-sp" />
+							<img src="img/home/imgAbout02_sp.png" alt="オーディエー株式会社" class="hidden-pc" />
+						</figure>
+						<figure class="homeAboutBox__image03 --typeScrollFadeIn"><img src="img/home/imgAbout03.png" alt="オーディエー株式会社" /></figure>
+			        	<!-- /.homeAboutBox --></div>
+				<!-- /.inBase --></div>
+			<!-- /.homeHeadBox --></div>
+
+			<div class="inBase__inner clearfix">
+				<div class="homeWorkBox --typeScrollFadeIn">
+					<div class="homeWorkBox__inner">
+						<div class="homeWorkBox__title">
+							<div class="title--type01">
+								<small>Work</small>
+								<h3>事業内容</h3>
+							<!-- /.title--type01 --></div>
+						<!-- /.homeWorkBox__title --></div>
+						<h4 class="homeWorkBox__copy">食材の仕入れ・加工・販売まで<br>安心安全な食材をお届けする<br class="hidden-pc">総合フードサービス</h4>
+						<p class="homeWorkBox__sentence">変わり続ける食のニーズにお応えするべく、業務用食材と食品原材料の仕入れ・加工・販売、レシピ開発、オリジナル商品の販売、一般向けの直営店舗やネット販売など、総合的なフードサービスを提供しています。今日も食材を届けるために、皆さんの街をODAのトラックが走ります。</p>
+						<div class="homeWorkBox__button hidden-sp">
+							<div class="button--type01">
+								<a href="<?php echo home_url(); ?>/service">詳しくみる</a>
+							<!-- /.button--type01 --></div>
+						<!-- /.homeWorkBox__button --></div>
+					<!-- /.homeWorkBox__inner --></div>
+					<figure class="homeWorkBox__image"><img src="img/home/imgWork.png" alt="事業内容" /></figure>
+					<figure class="homeWorkBox__bg"><img src="img/home/imgD.png" alt="D" /></figure>
+					<div class="homeWorkBox__button  hidden-pc">
+						<div class="button--type01">
+							<a href="<?php echo home_url(); ?>/service">詳しくみる</a>
+						<!-- /.button--type01 --></div>
+					<!-- /.homeWorkBox__button --></div>
+				<!-- /.homeWorkBox --></div>
+
+				
+				<div class="homeWorkImageBox --typeScrollFadeIn">
+					<figure><img src="img/home/image01.jpg" alt="業務用食材と食品原材料の仕入れ・加工・販売" /></figure>
+					<figure><img src="img/home/image02.jpg" alt="今日も食材を届けるために、皆さんの街をODAのトラックが走ります" /></figure>
+				<!-- /.homeWorkImageBox --></div>
+
+
+				<div class="homeFeatureBox --typeScrollFadeIn">
+					<div class="homeFeatureBox__inner">
+						<div class="homeFeatureBox__title">
+							<div class="title--type01">
+								<small>The features</small>
+								<h3>わたしたちの強み</h3>
+							<!-- /.title--type01 --></div>
+						<!-- /.homeFeatureBox__title --></div>
+						<h4 class="homeFeatureBox__copy">多彩な食材の品質管理と安定供給を可能に<br>「MORE +5s」に沿った<br class="hidden-pc">独自の流通システム</h4>
+						<p class="homeFeatureBox__sentence">お客様にご満足いただくため、求められる食材を先取りして揃え、より早く安全にお届けするのが私たちの使命。これを達成するためにODAは5つのテーマ（MORE +5s）を掲げ、独自の流通システムを作り出しました。</p>
+						<div class="homeFeatureBox__button  hidden-sp">
+							<div class="button--type01">
+								<a href="<?php echo home_url(); ?>/policy">詳しくみる</a>
+							<!-- /.button--type01 --></div>
+						<!-- /.homeFeatureBox__button --></div>
+					<!-- /.homeFeatureBox__inner --></div>
+					<div class="homeFeatureBox__image">
+						<figure><img src="img/home/imgFeatures.png" alt="わたしたちの強み" /></figure>
+						<figure><img src="img/home/bgFeatures.png" alt="わたしたちの強み" /></figure>
+					<!-- /.homeFeatureBox__image --></div>
+					<div class="homeFeatureBox__button hidden-pc">
+						<div class="button--type01">
+								<a href="<?php echo home_url(); ?>/policy">詳しくみる</a>
+						<!-- /.button--type01 --></div>
+					<!-- /.homeFeatureBox__button --></div>
+					<figure class="homeFeatureBox__bg"><img src="img/home/imgA.png" alt="A" /></figure>
+				<!-- /.homeFeatureBox --></div>
+
+				<div class="homeStoreBox --typeScrollFadeIn">
+					<div class="homeStoreBox__inner">
+						<div class="homeStoreBox__title">
+							<div class="title--type01">
+								<small>Store</small>
+								<h3>店舗情報</h3>
+							<!-- /.title--type01 --></div>
+						<!-- /.homeStoreBox__title --></div>
+						<p class="homeStoreBox__sentence">ここに文章が入りますここに文章が入りますここに文章が入ります。<br>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+						<ul class="homeStoreBox__storeList">
+							<li><a href="<?php echo home_url(); ?>/kyoto"><figure><img src="img/home/imgStore01.jpg" alt="京都本店" /></figure><p>京都本店</p></a></li>
+							<li><a href="<?php echo home_url(); ?>/higashishinsaibashioda"><figure><img src="img/home/imgStore02.jpg" alt="東心斎橋小田店" /></figure><p>東心斎橋小田店</p></a></li>
+							<li><a href="<?php echo home_url(); ?>/kizuichiba"><figure><img src="img/home/imgStore03.jpg" alt="木津市場店" /></figure><p>木津市場店</p></a></li>
+							<li><a href="<?php echo home_url(); ?>/kobemotomachi"><figure><img src="img/home/imgStore04.jpg" alt="神戸元町店" /></figure><p>神戸元町店</p></a></li>
+						<!-- /.homeStoreBox__storeList --></ul>
+					<!-- /.homeStoreBox__inner --></div>
+				<!-- /.homeStoreBox --></div>
+
+				<div class="homeOnlineBox --typeScrollFadeIn">
+					<div class="homeOnlineBox__title">
+						<div class="title--type01">
+							<small>Online Shopping</small>
+							<h3>ECサイト運営</h3>
+						<!-- /.title--type01 --></div>
+					<!-- /.homeOnlineBox__title --></div>
+					<p class="homeOnlineBox__sentence">ここに文章が入りますここに文章が入りますここに文章が入ります。<br>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+					<div class="homeOnlineBox__bannerBox --type01 --typeScrollFadeIn">
+						<a href="https://i-kitchen.net/" target="_blank">
+							<figure class="homeOnlineBox__bannerBox__image"><img src="img/home/imgEC01.jpg" alt="いつもキッチン" /></figure>
+							<div class="homeOnlineBox__bannerBox__content">
+								<figure><img src="img/home/titleEC01.png" alt="itsumo kitchen　いつもキッチン" /></figure>
+								<p>ここに文章が入りますここに文章が入りますここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+							<!-- /.homeOnlineBox__content --></div>
+						</a>
+					<!-- /.homeOnlineBox__bannerBox --></div>
+					<div class="homeOnlineBox__bannerBox --type02 --typeScrollFadeIn">
+						<a href="https://i-kitchenbox.net/" target="_blank">
+							<figure class="homeOnlineBox__bannerBox__image"><img src="img/home/imgEC02.jpg" alt="いつもデザート" /></figure>
+							<div class="homeOnlineBox__bannerBox__content">
+								<figure><img src="img/home/titleEC02.png" alt="いつもデザートBOX" /></figure>
+								<p>ここに文章が入りますここに文章が入りますここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+							<!-- /.homeOnlineBox__content --></div>
+						</a>
+					<!-- /.homeOnlineBox__bannerBox --></div>
+				<!-- /.homeOnlineBox --></div>
+
+				<div class="homeMessageBox --typeScrollFadeIn">
+					<div class="homeMessageBox__inner">
+						<div class="homeMessageBox__title">
+							<div class="title--type01">
+								<small>Message</small>
+								<h3>ご挨拶</h3>
+							<!-- /.title--type01 --></div>
+						<!-- /.homeMessageBox__title --></div>
+						<div class="homeMessageBox__image">
+							<img src="img/home/imgMessage.jpg" alt="代表取締役社長" />
+						<!-- /.homeMessageBox__image --></div>
+						<p class="homeMessageBox__name"><small>代表取締役社長</small>　小田 大輔</p>
+						<p class="homeMessageBox__sentence">
+							私たちは食品を扱う会社として、お客様のもとへ食材を安心安全にお届けすることを最優先に考えています。これは業務用食材のプロとして創業から70年以上食に携わってきたODAの揺るぎない信念です。今でもこの想いのもと、生産から消費までの「モノ・コト・流れ」の仕組みを常に見直し、新しい技術やアイデアを取り入れながら食材の管理体制をアップデートしています。
+時代やニーズが変わろうとも、品質の保たれた食材が多くの人に安定して提供できるよう努力し続けます。
+						</p>
+						<div class="homeMessageBox__button">
+							<div class="button--type01">
+								<a href="<?php echo home_url(); ?>/message">詳しくみる</a>
+							<!-- /.button--type01 --></div>
+						<!-- /.homeMessageBox__button --></div>
+					<!-- /.homeMessageBox__inner --></div>
+					<div class="homeMessageBox__bg">
+						<img src="img/home/bgMessage.png" alt="ご挨拶" />
+					<!-- /.homeBannerBox --></div>
+				<!-- /.homeMessageBox --></div>
+
+				<div class="homeRecruitBox --typeScrollFadeIn">
+					<figure class="homeRecruitBox__image"><img src="img/home/imgRecruit.jpg" alt="採用情報" /></figure>
+					<div class="homeRecruitBox__title">
+						<div class="title--type01">
+							<small>Recruit</small>
+							<h3>採用情報</h3>
+						<!-- /.title--type01 --></div>
+						<p class="homeRecruitBox__copy">ODAであなたの才能を<br>活かしましょう！</p>
+					<!-- /.homeRecruitBox__title --></div>
+					<div class="homeRecruitBox__bottom">
+						<p class="homeRecruitBox__sentence">企画営業・営業事務・店舗スタッフ・ドライバー・倉庫内スタッフ・倉庫内商品管理</p>
+						<div class="homeRecruitBox__button">
+							<div class="button--type02">
+								<span class="notButton">準備中</span>
+								<!-- <a href="<?php echo home_url(); ?>/recruitment">詳しくみる</a> -->
+							<!-- /.button--type02 --></div>
+						<!-- /.homeRecruitBox__button --></div>
+					<!-- /.homeRecruitBox__bottom --></div>
+				<!-- /.homeRecruitBox --></div>
+
+				<div class="homeBannerBox --typeScrollFadeIn">
+					<figure><a href="#"><img src="img/home/imgBanner01.png" alt="木津市場情報" /></a></figure>
+					<figure><a href="#"><img src="img/home/imgBanner02.png" alt="木津の朝市" /></a></figure>
+				<!-- /.homeBannerBox --></div>
+
+			<!-- /.inBase__inner --></div>
+		<!-- /.inBase --></div>
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<div class="inBase sM"><div class="inBase__inner clearfix">
+			<div class="footer__informationBox">
+				<div class="footer__information">
+					<div class="footer__title">
+						<img src="img/common/siteTitle_white.svg" alt="ODA オーディエー株式会社" />
+					<!-- /.footer__title --></div>
+					<div class="footer__sentence">
+						<p>【本社情報】<br>
+							〒574-0044 大阪府大東市諸福4-3-17<br>
+							TEL : 072-869-6801</p>
+						<p>営業時間：00時～00時<br>定休日：</p>
+					<!-- /.footer__sentence --></div>
+					<div class="footer__button">
+						<a href="<?php echo home_url(); ?>/contact">お問い合わせはこちら</a>
+					<!-- /.footer__button --></div>
+				<!-- /.footer__information --></div>
+				<div class="footer__mapBox">
+					<div class="googleMapBox">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6559.934013736985!2d135.60100290000003!3d34.706012099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011fe279e53413%3A0x57b2a91cea9b866e!2z44CSNTc0LTAwNDQg5aSn6Ziq5bqc5aSn5p2x5biC6Ku456aP77yU5LiB55uu77yT4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1722582217648!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!-- /.googleMapBox --></div>
+				<!-- /.footer__mapBox --></div>
+			<!-- /.footer__informationBox --></div>
+			<ul class="footer__navi">
+				<li><a href="<?php echo home_url(); ?>/policy">ODAの5つの方針</a></li>
+				<li><a href="<?php echo home_url(); ?>/logistics"><small>物流システム・会社倉庫</small></a></li>
+				<li><a href="<?php echo home_url(); ?>/message">代表メッセージ</a></li>
+				<li><a href="<?php echo home_url(); ?>/service">事業内容</a></li>
+				<li><a href="<?php echo home_url(); ?>/safety">安心安全の取り組み</a></li>
+				<li><a href="<?php echo home_url(); ?>/sdgs">SDGs</a></li>
+				<li><a href="<?php echo home_url(); ?>/recruitment">採用情報</a></li>
+				<li><a href="<?php echo home_url(); ?>/business"><small>新規お取引をご希望の業者様へ</small></a></li>
+				<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+			</ul>
+			<ul class="footer__navi">
+				<li><a href="<?php echo home_url(); ?>/kizuichiba">木津市場店</a></li>
+				<li><a href="<?php echo home_url(); ?>/kyoto">京都本店</a></li>
+				<li><a href="<?php echo home_url(); ?>/higashishinsaibashioda">東心斎橋小田店</a></li>
+				<li><a href="<?php echo home_url(); ?>/kobemotomachi">神戸元町店</a></li>
+				<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+				<li><a href="<?php echo home_url(); ?>/history">沿革</a></li>
+				<li><a href="<?php echo home_url(); ?>/privacypolicy">プラシバシーポリシー</a></li>
+			</ul>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<small class="copyright">Copyright &copy; 2024 オーディエー株式会社. All Rights Reserved.</small>
+	<!-- /#footer --></footer>
+
+        
+	<p id="btnRise"><a href="#wrapper"><i class="icon-chevron-up"></i><span>ページ上部に戻る</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+	<div id="btnPageBottom">
+	        <div class="btnPageBottom--btn">
+	            <a class="clearfix" href="https://www2.infomart.co.jp/oroshi/index.pagex?0&oroshi_smcd=SkbZ53mR">
+	                <figure><img src="img/common/iconEstimation.svg" alt="見積り" /></figure>
+	                <span>食品のお見積り<br><small>発注はこちらから</small></span>
+	            </a>
+	            <a class="clearfix" href="<?php echo home_url(); ?>/recruitment">
+	                <figure><img src="img/common/iconRecruitment.svg" alt="採用情報" /></figure>
+	                <span>採用情報</span>
+	            </a>
+	        <!-- /.btnPageBottom--btn --></div>
+	<!-- /#btnPageBottom --></div>
+
+	<div class="sideBannerBox">
+    		<div class="sideBannerBox__banner --type01">
+			<a href="https://www2.infomart.co.jp/oroshi/index.pagex?0&oroshi_smcd=SkbZ53mR">
+		                <figure><img src="img/common/iconEstimation.svg" alt="見積り" /></figure>
+		                <span>食品のお見積り<br>発注はこちらから</span>
+			</a>
+		<!-- /.sideBanner --></div>
+    		<div class="sideBannerBox__banner --type02">
+			<a href="<?php echo home_url(); ?>/recruitment">
+	                	<figure><img src="img/common/iconRecruitment.svg" alt="採用情報" /></figure>
+	                	<span>採用情報</span>
+	     		</a>
+		<!-- /.sideBanner --></div>
+	<!-- /.sideBannerBox --></div>
+
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
