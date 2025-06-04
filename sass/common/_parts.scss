@@ -2325,3 +2325,12 @@ ol li .block-editor-rich-text__editable{
               filter: blur(0);
     }
 }
+
+#wrapper .inBase__inner .inBase__inner--cancel{
+	@include s.media(m){
+		width:111%;
+		margin-left:-5.5%;
+		display:block;
+	}
+	
+}

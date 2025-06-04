@@ -1,0 +1,1104 @@
+@use "../_setting" as s;
+.page-id-43 #wrapper{
+	.article h2.reset-default {
+		font-size:auto;
+		padding:auto;
+		text-align:left;
+		background:unset;
+		border-radius:unset;
+		@include s.media(m){
+			font-size:auto;
+		}
+	}
+	.article h3.reset-default {
+		font-size:unset;
+		display:block;
+		color:unset;
+		padding:0;
+		text-align:left;
+		font-family: "Noto Sans JP", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		&::before{
+			content:none;
+		}
+		&::after{
+			content:none;
+		}
+	}
+	.article h4.reset-default {
+		font-size:auto;
+		color:unset;
+		&:before {
+			content: none;
+		}
+		@include s.media(m){
+			font-size:auto;
+		}
+	}
+	.article h5.reset-default {
+		font-size:auto;
+		color:unset;
+		border-bottom:none;
+		@include s.media(m){
+			font-size:auto;
+		}
+	}
+	.article ul.reset-default{
+		padding-left: 0;
+		li{
+			font-size:auto;
+			padding-left:0;
+			@include s.media(m){
+			}
+			&:before {
+				content:none;
+			}
+			@include s.media(m){
+				font-size:auto;
+			}
+		}
+	}
+	.article h2 {
+		background:#D5D5D5;
+		color:#000;
+	}
+	.article dd {
+	    margin-left: 0;
+	}
+}
+
+#wrapper .article .recruitmentAboutBox{
+	width:116%;
+	margin-left:-8%;
+	display:block;
+	padding:0 2em;
+	background:#F8EBDB;
+	@include s.media(m){
+		width:100%;
+		margin-left:0;
+		padding:2em 0 0;
+	}
+	.inBase__inner{
+		position:relative;
+	}
+	&__title{
+		width:70%;
+		@include s.media(m){
+			width:39%;
+		}
+	}
+}
+
+
+// .accordionBox--typeRecruitmentAboutBox
+.accordionBox--typeRecruitmentAboutBox{
+	overflow:hidden;
+	@include s.media(m){
+		overflow:visible;
+	}
+}
+
+.accordion--typeRecruitmentAboutBox{
+	label{
+	    display: block;
+	    cursor :pointer;
+	    transition: all 0.5s;
+	    position:relative;
+		@include s.media(m){
+	    		cursor :auto;
+		}
+	    &:hover {
+		}
+	}
+	&__icon {
+		width:1.5em;
+		height:2px;
+	    	display: block;
+		position:absolute;
+		right:2em;
+		top:50%;
+		margin-top:-1px;
+		@include s.media(m){
+	    		display: none;
+		}
+		div{
+			background: s.$colorType02;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 0.4s ease;
+			&:last-child{
+				transform: rotate(90deg);
+			}
+		}
+	}
+	input {
+	    display: none;
+	}
+	&__content {
+	    height: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    opacity: 0;
+	    transition: 0.5s;
+		position:relative;
+		&::before{
+			content:"";
+			display:block;
+			width:100%;
+			height:2.5em;
+			background:#F8EBDB;
+			position:absolute;
+			bottom:0;
+			left:0;
+			@include s.media(m){
+				content:none;
+			}
+		}
+		@include s.media(m){
+		    	height: auto;
+		    	opacity: 1;
+	    		padding: 0 5em;
+	    		overflow: visible;
+		}
+	}
+	//クリックで中身表示
+	&__check:checked + label + .accordion--typeRecruitmentAboutBox__content {
+	    height: auto;
+	    padding: calc(s.$spaceSize/2) s.$spaceSize;
+	    opacity: 1;
+		@include s.media(m){
+	    	padding: s.$spaceSize s.$spaceSize*2;
+		}
+	}
+	&__check:checked + label{
+		background:#FFF;
+		color:#000;
+		@include s.media(m){
+			background:unset;
+		}
+		&:hover{
+			background:#FFF;
+			@include s.media(m){
+				background:unset;
+			}
+		}
+	}
+	&__check:checked + label .accordion--typeRecruitmentAboutBox__icon div:last-child{
+		transform: none;
+	}
+}
+
+#wrapper .article .recruitmentAboutBox{
+	display:block;
+	background:#F8EBDB;
+	margin-bottom:4em;
+	@include s.media(m){
+		margin-bottom:10em;
+	}
+	.inBase__inner{
+		padding:1em 0;
+		position:relative;
+		display:flex;
+		flex-wrap:wrap;
+		@include s.media(m){
+			padding:2em 0;
+		}
+	}
+	&__title{
+		width:80%;
+		font-size:1em;
+		padding-top:0;
+		@include s.media(m){
+			width:26.4em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__topImage{
+		width:11.6em;
+		position:absolute;
+		top:6.6em;
+		right:0;
+		z-index:3;
+		@include s.media(m){
+			width:37.5em;
+			top:-2em;
+			right:-3em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__inner{
+		display:block;
+		background:#FFF;
+		margin-bottom:2em;
+		position:relative;
+		z-index:2;
+		@include s.media(m){
+			border-radius:1em;
+			margin-bottom:3em;
+			padding-bottom:2em;
+		}
+		&__content{
+			padding:0 1.5em;
+			position:relative;
+			@include s.media(m){
+				padding:0 5em;
+			}
+		}
+		&.--typeDuties01{
+			@include s.media(m){
+				padding-bottom:0;
+			}
+			.recruitmentAboutBox__sectionImage{
+				@include s.media(m){
+					position:static;
+					margin:-8em 1em 0 0;
+					float:right;
+				}
+				img{
+					width:100%;
+					margin-bottom:-1em;
+					@include s.media(m){
+						margin-bottom:-2em;
+					}
+				}
+			}
+		}
+		&.--typeDuties02{
+			.recruitmentAboutBox__sectionImage{
+				width:100%;
+				@include s.media(m){
+					width:24em;
+				}
+				@include s.media(m){
+					right:11em;
+				}
+			}
+			
+		}
+		&.--typeDuties05{
+			.accordion--typeRecruitmentAboutBox__content::before{
+				background:#DEDEDE;
+				@include s.media(m){
+					background:#F8EBDB;
+				}
+			}
+		}
+	}
+	h3.recruitmentAboutBox__sectionTitle{
+		display:block;
+		position:relative;
+		font-size:1.375em;
+		padding:2em 0 0 1em;
+		@include s.media(m){
+			font-size:2.5em;
+			padding:0 0 0 0.5em;
+		}
+		span{
+			font-size:0.8em;
+			display:block;
+			width:3em;
+			height:1.8em;
+			text-align:center;
+			position:absolute;
+			top:0;
+			left:1.5em;
+			background:s.$colorType02;
+			color:#FFF;
+			border-radius:0 0 0.5em 0.5em;
+			padding-top:0.3em;
+			@include s.media(m){
+				font-size:1em;
+				width:2em;
+			}
+		}
+		b{
+			font-weight: 900;
+			color:s.$colorType02;
+			letter-spacing:0.1em;
+			@include s.media(m){
+				padding:0.5em 0 0 3.5em;
+				display:block;
+			}
+		}
+	}
+	&__list{
+		@include s.media(m){
+			padding-left:5.5em;
+		}
+		li{
+			position:relative;
+			padding-left:1.5em;
+			font-weight:900;
+			&::before{
+				content:"";
+				width:0.8em;
+				height:0.8em;
+				display:block;
+				background:s.$colorType02;
+				transform:rotate(45deg);
+				position:absolute;
+				top:0.4em;
+				left:0;
+				border-radius:unset;
+			}
+		}
+	}
+	&__stepBox{
+		display:block;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+		}
+		dl{
+			border:s.$colorType02 solid 2px;
+			border-radius:0.5em;
+			position:relative;
+			margin-bottom:1.5em;
+			@include s.media(m){
+				width:30%;
+				margin-bottom:1em;
+			}
+			&::before{
+				content:none;
+				display:block;
+				width:1.5em;
+				height:1.5em;
+				aspect-ratio: cos(30deg);
+				clip-path: polygon(0 0,100% 50%,0 100%);
+				background: s.$colorType02;
+				position:absolute;
+				left:50%;
+				bottom:-1.5em;
+				margin-left:-0.75em;
+				transform:rotate(90deg);
+				@include s.media(m){
+					content:"";
+					right:-1.5em;
+					top:50%;
+					left:unset;
+					bottom:unset;
+					margin-left:0;
+					margin-top:-0.75em;
+					transform:rotate(0deg);
+				}
+			}
+			&:last-child::before{
+				content:none;
+			}
+			&:nth-child(1){
+				dt span::before{
+					background:url(../img/recruitment/imgStep01.png) no-repeat center top;
+					background-size:100% auto;
+				}
+			}
+			&:nth-child(2){
+				dt span::before{
+					background:url(../img/recruitment/imgStep02.png) no-repeat center top;
+					background-size:100% auto;
+				}
+			}
+			&:nth-child(3){
+				dt span::before{
+					background:url(../img/recruitment/imgStep03.png) no-repeat center top;
+					background-size:100% auto;
+				}
+			}
+			dt{
+				background:s.$colorType02;
+				color:#FFF;
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-weight:600;
+				padding:0.3em 1em;
+				@include s.media(m){
+					text-align:center;
+				}
+				span{
+					display:inline-block;
+					position:relative;
+					padding-left:3.5em;
+					&::before{
+						width:3em;
+						height:1.5em;
+						display:block;
+						content:"";
+						position:absolute;
+						top:0.1em;
+						left:0;
+					}
+				}
+			}
+			dd{
+				padding:1em;
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-weight:600;
+				@include s.media(m){
+					font-weight:900;
+				}
+			}
+		}
+	}
+	&__pointBox{
+		width:100%;
+		display:flex;
+		margin-bottom:1em;
+		@include s.media(m){
+			align-items:center;
+		}
+		figure{
+			width:3.5em;
+			@include s.media(m){
+				width:5em;
+			}
+			img{
+				width:100%;
+			}
+		}
+		p{
+			width:90%;
+			font-size:1.1em;
+			padding-left:1em;
+			font-family: "Noto Sans JP", sans-serif;
+			font-optical-sizing: auto;
+			font-style: normal;
+			font-weight:900;
+			color:s.$colorType02;
+			margin-bottom:0;
+			letter-spacing:0.1em;
+			@include s.media(m){
+				font-size:1.375em;
+				line-height:1.5em;
+			}
+		}
+	}
+	&__sectionImage{
+		width:80%;
+		margin:0 auto;
+		position:relative;
+		@include s.media(m){
+			width:24em;
+			position:absolute;
+			top:-8em;
+			right:6em;
+		}
+		img{
+			width:100%;
+			@include s.media(m){
+				margin-bottom:0;
+			}
+		}
+
+	}
+	&__shopBox{
+		width:100%;
+		display:block;
+		position:relative;
+		z-index:1;
+		order: 1;
+		margin-bottom:2.5em;
+		@include s.media(m){
+			order: 0;
+			margin-bottom:0;
+		}
+		&::before{
+			content:"";
+			display:block;
+			width:112%;
+			height:110%;
+			background:#DEDEDE;
+			position:absolute;
+			top:-10%;
+			left:-6%;
+			z-index:-1;
+			@include s.media(m){
+				width:108%;
+				height:180%;
+				left:-4%;
+				top:-40%;
+			}
+		}
+	}
+	&__shopHead{
+		display:block;
+		margin-bottom:1em;
+		@include s.media(m){
+			display:flex;
+			align-items:center;
+			margin-bottom:1em;
+		}
+		p{
+			font-family: "Noto Sans JP", sans-serif;
+			font-optical-sizing: auto;
+			font-style: normal;
+			font-weight:900;
+			font-size:1.125em;
+			position:relative;
+			margin-bottom:1em;
+			line-height:1.7em;
+			letter-spacing:0.1em;
+			@include s.media(m){
+				padding-left:1.5em;
+				color:s.$colorType02;
+				margin-bottom:0;
+			}
+		}
+	}
+	&__shopBoxTitle{
+		width:50%;
+		margin-bottom:3em;
+		@include s.media(m){
+			width:15.75em;
+			margin-bottom:0;
+		}
+	}
+	&__shopImage{
+		width:90%;
+		display:block;
+		position:absolute;
+		top:1em;
+		right:-4em;
+		@include s.media(m){
+			width:23.1em;
+			top:0;
+			right:0;
+		}
+	}
+	&__shopBoxTitle02{
+		display:block;
+		text-align:center;
+		font-size:1.19em;
+		font-family: "Noto Sans JP", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight:900;
+		padding:0;
+		color:s.$colorType02;
+		@include s.media(m){
+			color:#000;
+			font-size:1.875em;
+		}
+		&::before{
+			content:none;
+		}
+		span{
+			display:inline-block;
+			position:relative;
+			&::before{
+				content:"";
+				display:block;
+				width:3em;
+				height:1px;
+				background:s.$colorType02;
+				position:absolute;
+				top:50%;
+				left:-4em;
+				@include s.media(m){
+					background:#000;
+				}
+			}
+			&::after{
+				content:"";
+				display:block;
+				width:3em;
+				height:1px;
+				background:s.$colorType02;
+				position:absolute;
+				top:50%;
+				right:-4em;
+				@include s.media(m){
+					background:#000;
+				}
+			}
+		}
+	}
+	&__shopList{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-items:center;
+		margin-bottom:2em;
+		@include s.media(m){
+			margin-bottom:3em;
+		}
+		dl{
+			width:50%;
+			padding:0 1em;
+			margin-bottom:1.5em;
+			@include s.media(m){
+				width:10.4em;
+			}
+			dt{
+				display:block;
+				margin-bottom:0.5em;
+				img{
+					width:100%;
+				}
+			}
+			dd{
+				text-align:center;
+				background:s.$colorType02;
+				color:#FFF;
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-weight:600;
+				border-radius:0.3em;
+				padding:0.3em 0.5em;
+				margin-top:-2em;
+				position:relative;
+				@include s.media(m){
+					margin-top:0;
+				}
+			}
+		}
+	}
+	&__companyBox{
+		display:block;
+		order:999;
+		position:relative;
+		@include s.media(m){
+			order:0;
+		}
+	}
+	&__companyBoxTitle{
+		margin-bottom:4.2em;
+		@include s.media(m){
+			width:72%;
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:2em;
+		}
+		&+ ul{
+			display:block;
+			@include s.media(m){
+				width:100%;
+				display:flex;
+				justify-content:center;
+				gap:1em;
+			}
+			li{
+				background:s.$colorType02;
+				padding:0.5em 1em;
+				color:#FFF;
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-weight:600;
+				border-radius:0.5em;
+				text-align:center;
+				font-size:1.625em;
+				@include s.media(m){
+					padding:0.5em 2em;
+				}
+				b{
+					display:block;
+				}
+				small{
+					display:block;
+					font-size:0.69em;
+				}
+				&::before{
+					content:none;
+				}
+			}
+			&+ p{
+				font-size:1.125em;
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-weight:400;
+				margin-bottom:4em;
+				@include s.media(m){
+					padding-right:12em;
+					letter-spacing:0.1em;
+					margin-bottom:2.5em;
+				}
+				&+ figure{
+					width:8.7em;
+					display:block;
+					position:absolute;
+					top:4.5em;
+					left:50%;
+					margin-left:-4.35em;
+					@include s.media(m){
+						width:12.4em;
+						top:unset;
+						left:unset;
+						margin-left:0;
+						bottom:1em;
+						right:0;
+					}
+				}
+			}
+		}
+	}
+	&__strengthBox{
+		width:112%;
+		margin-left:-6%;
+		display:block;
+		background:#DEDEDE url(../img/recruitment/bgFullLine_sp.jpg) no-repeat center bottom;
+		background-size:100% auto;
+		position:relative;
+		z-index:1;
+		&::before{
+			content:"";
+			display:block;
+			width:120%;
+			height:10em;
+			background:#DEDEDE;
+			position:absolute;
+			top:-3em;
+			left:50%;
+			z-index:-1;
+			margin-left:-60%;
+			border-radius:50%;
+			@include s.media(m){
+				content:none;
+			}
+		}
+		@include s.media(m){
+			width:100%;
+			margin-left:0;
+			background:#DEDEDE url(../img/recruitment/bgFullLine.jpg) no-repeat center bottom;
+			background-size:100% auto;
+		}
+		.inBase__inner{
+			display:block;
+			width:90%;
+			margin:0 auto;
+			@include s.media(m){
+				width:90%;
+			}
+		}
+		p{
+			font-size:0.875em;
+			font-family: "Noto Sans JP", sans-serif;
+			font-optical-sizing: auto;
+			font-style: normal;
+			font-weight:500;
+			font-size:1.125em;
+			margin-bottom:0.5em;
+			@include s.media(m){
+				font-size:1.125em;
+				font-weight:600;
+			}
+			b{
+				font-size:1.3em;
+				display:block;
+				text-align:center;
+				@include s.media(m){
+					text-align:left;
+				}
+			}
+		}
+	}
+	&__strengthBoxLead{
+		font-size:1em;
+		width:90%;
+		margin:0 auto 1em;
+		display:block;
+		padding:0;
+		@include s.media(m){
+			width:27.6em;
+			margin:0 0 1em;
+		}
+		&::before,&::after{
+			content:none;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__strengthBoxTitle{
+		font-size:1em;
+		width:100%;
+		margin:0 auto 1em;
+		display:block;
+		padding:0;
+		@include s.media(m){
+			width:41.75em;
+			margin:0 0 1em;
+			display:block;
+		}
+		&::before{
+			content:none;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__strengthBoxImage{
+		width:100%;
+		display:block;
+		margin:0 auto 10em;
+		@include s.media(m){
+			width:73%;
+			margin:-1em auto 2em;
+		}
+	}
+}
+
+#wrapper .article .recruitmentMessageBox{
+	margin-bottom:3em;
+	display:block;
+	@include s.media(m){
+		margin-bottom:6em;
+	}
+	.inBase__inner{
+		position:relative;
+		@include s.media(m){
+		}
+	}
+	&__image{
+		position:absolute;
+		top:0;
+		right:1.5em;
+		width:10em;
+		@include s.media(m){
+			width:21.9em;
+			right:12.4em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__name{
+		line-height:1.7;
+		font-family: "Noto Sans JP", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight:600;
+		position:absolute;
+		top:10em;
+		left:0;
+		@include s.media(m){
+			position:absolute;
+			top:22.5em;
+			right:25em;
+			left:unset;
+		}
+		small{
+			display:inline-block;
+			margin-right:1em;
+			@include s.media(m){
+				font-size:0.875em;
+				display:block;
+			}
+		}
+		span{
+			@include s.media(m){
+				display:block;
+				font-size:1.375em;
+			}
+		}
+	}
+	&__title{
+		font-size:1em;
+		display:block;
+		text-align:left;
+		padding:0;
+		position:relaitve;
+		color:#FFF;
+		margin-bottom:9.5em;
+		@include s.media(m){
+			margin-bottom:6em;
+		}
+		&::before{
+			width:112%;
+			height:43.8em;
+			display:block;
+			content:"";
+			background:url(../img/recruitment/imgLine_sp.png) no-repeat center top;
+			background-size:100% auto;
+			z-index:-1;
+			position:absolute;
+			top:-1.5em;
+			left:-6%;
+			@include s.media(m){
+				width:120em;
+				height:43.8em;
+				background:url(../img/recruitment/imgLine.png) no-repeat center bottom;
+				background-size:100% auto;
+				top:-6em;
+				left:-26.25em;
+			}
+		}
+		&::after{
+			content:none;
+		}
+		small{
+			display:block;
+			font-size:1.125em;
+		}
+		b{
+			font-size:1.625em;
+			display:block;
+		}
+	}
+	&__lead{
+		color:s.$colorType02;
+		font-size:1.375em;
+		padding-left:0;
+		&::before{
+			content:none;
+		}
+	}
+	&__sentence{
+		font-size:1.125em;
+		line-height:2.3em;
+		margin-bottom:2em;
+		letter-spacing:0.1em;
+		@include s.media(m){
+			margin-bottom:5em;
+		}
+	}
+}
+
+
+#wrapper .article .recruitmentExperienceBox{
+	margin-bottom:2.5em;
+	@include s.media(m){
+		margin-bottom:5em;
+	}
+	&__inner{
+		display:block;
+		position:relative;
+		background:s.$colorType02;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+		}
+		&> figure{
+			padding:0 1em 1em;
+			@include s.media(m){
+				width:52%;
+				padding:0;
+			}
+		}
+	}
+	&__content{
+		display:block;
+		padding:2.5em 1.5em 1.5em;
+		position:relative;
+		@include s.media(m){
+			width:48%;
+			padding:2.5em 0 2em 2.5em;
+		}
+	}
+	&__title{
+		color:#FFF;
+		padding:0;
+		text-align:left;
+		display:block;
+		font-size:1.5em;
+		margin-bottom:0.5em;
+		text-align:center;
+		@include s.media(m){
+			font-size:2.5em;
+			text-align:left;
+			margin-bottom:1em;
+		}
+		&::before{
+			content:none;
+		}
+		&::after{
+			content:none;
+		}
+		&+p{
+			font-size:1.125em;
+			line-height:1.7;
+			font-family: "Noto Sans JP", sans-serif;
+			font-optical-sizing: auto;
+			font-style: normal;
+			font-weight:600;
+			text-align:center;
+			@include s.media(m){
+				font-size:1.375em;
+				text-align:left;
+			}
+			b{
+				color:#FFF;
+				display:inline-block;
+				padding-top:1em;
+			}
+		}
+	}
+	&__fukidashi{
+		width:10.75em;
+		display:block;
+		position:absolute;
+		bottom:-3em;
+		right:0.5em;
+		@include s.media(m){
+			width:16em;
+			bottom:unset;
+			top:1.5em;
+			right:-6em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__information{
+		display:block;
+		background:#F8EBDB;
+		position:relative;
+		padding:2.5em 0;
+		&> figure{
+			width:7.2em;
+			position:absolute;
+			top:-20em;
+			left:-0.5em;
+			@include s.media(m){
+				width:12.5em;
+				top:-1em;
+				left:5em;
+			}
+		}
+		dl{
+			display:block;
+			font-family: "Noto Sans JP", sans-serif;
+			font-optical-sizing: auto;
+			font-style: normal;
+			font-weight:600;
+			@include s.media(m){
+				width:75%;
+				margin:0 0 2em 25%;
+				display:flex;
+			}
+			dt{
+				margin-bottom:1em;
+				padding-left:2em;
+				@include s.media(m){
+					padding-left:0;
+				}
+				span{
+					display:inline-block;
+					background:s.$colorType02;
+					color:#FFF;
+					padding:0.1em 1em;
+					border-radius:0.3em;
+				}
+			}
+			dd{
+				padding-left:2em;
+				@include s.media(m){
+					line-height:1.9;
+				}
+			}
+		}
+	}
+}

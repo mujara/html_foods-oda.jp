@@ -1547,8 +1547,8 @@ a.is-noLink {
   width: 3em;
   height: 3em;
   position: absolute;
-  top: 0.5em;
-  right: 0.5em;
+  top: 0;
+  right: 0;
 }
 .globalNaviSmall__iconButton {
   width: 3em;
@@ -1556,7 +1556,7 @@ a.is-noLink {
   cursor: pointer;
   float: right;
   display: block;
-  background: rgba(255, 255, 255, 0.7);
+  background: #d7231c;
   position: relative;
   margin: 0.5em 0.5em 0.5em 0.5em;
   border-radius: 0.3em 0.3em 0.3em 0.3em;
@@ -1566,7 +1566,7 @@ a.is-noLink {
   width: 2em;
   height: 1px;
   display: block;
-  background: #D7231C;
+  background: #FFF;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1749,7 +1749,7 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
   #wrapper .globalNavi {
     display: block;
     height: 5.5em;
-    width: 42em;
+    width: 39em;
     position: relative;
     padding-right: 1em;
   }
@@ -1826,12 +1826,12 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
 /* .globalNavi__menu__sub　グローバルナビサブメニュー
 ------------------------------------------ */
 #wrapper ul.globalNavi__menu__sub {
-  width: 160%;
+  width: 140%;
   opacity: 0; /*サブメニューは最初は非表示にしておく*/
   visibility: hidden; /*サブメニューは最初は非表示にしておく*/
   position: absolute;
   top: 5em;
-  left: -30%;
+  left: -20%;
   border-top: 1px solid #EEE; /*ボーダートップを指定*/
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1862,7 +1862,7 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
 }
 
 #wrapper .globalNavi ul li:hover ul.globalNavi__menu__sub {
-  width: 160%;
+  width: 140%;
   top: 5.2em;
   visibility: visible;
   opacity: 1;
@@ -1875,7 +1875,6 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
 
 #header {
   width: 100%;
-  height: 6em;
   position: absolute;
   top: 0;
   left: 0;
@@ -1891,9 +1890,6 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
     height: 8em;
   }
 }
-#header .inBase {
-  padding-top: 0.5em;
-}
 @media print, screen and (min-width: 768px) {
   #header .inBase {
     display: -webkit-box;
@@ -1907,14 +1903,13 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
             align-items: end;
     position: relative;
     padding-bottom: 1em;
-    padding-top: 0;
   }
 }
 
 #wrapper .header__siteTitleBox {
   width: 14.6em;
   display: block;
-  margin-right: 1em;
+  margin-right: 2em;
   margin-bottom: 0.5em;
   position: relative;
 }
@@ -1939,13 +1934,12 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
   display: block;
   text-align: center;
   position: absolute;
-  top: 0.8em;
+  top: 0;
   right: 0;
-  width: 7.8em;
+  width: 11em;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .header__siteTitleBox dd {
-    width: 100%;
     display: block;
     position: static;
   }
@@ -4970,6 +4964,14 @@ ol li .block-editor-rich-text__editable {
     filter: blur(0);
   }
 }
+@media print, screen and (min-width: 768px) {
+  #wrapper .inBase__inner .inBase__inner--cancel {
+    width: 111%;
+    margin-left: -5.5%;
+    display: block;
+  }
+}
+
 body {
   background: #FFF;
   color: #000;
@@ -6232,6 +6234,1293 @@ body.home .mainVisual__decorationCopy img {
 }
 #wrapper .homeBannerBox figure a:hover {
   opacity: 0.8;
+}
+
+.page-id-43 #wrapper .article h2.reset-default {
+  font-size: auto;
+  padding: auto;
+  text-align: left;
+  background: unset;
+  border-radius: unset;
+}
+@media print, screen and (min-width: 768px) {
+  .page-id-43 #wrapper .article h2.reset-default {
+    font-size: auto;
+  }
+}
+.page-id-43 #wrapper .article h3.reset-default {
+  font-size: unset;
+  display: block;
+  color: unset;
+  padding: 0;
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.page-id-43 #wrapper .article h3.reset-default::before {
+  content: none;
+}
+.page-id-43 #wrapper .article h3.reset-default::after {
+  content: none;
+}
+.page-id-43 #wrapper .article h4.reset-default {
+  font-size: auto;
+  color: unset;
+}
+.page-id-43 #wrapper .article h4.reset-default:before {
+  content: none;
+}
+@media print, screen and (min-width: 768px) {
+  .page-id-43 #wrapper .article h4.reset-default {
+    font-size: auto;
+  }
+}
+.page-id-43 #wrapper .article h5.reset-default {
+  font-size: auto;
+  color: unset;
+  border-bottom: none;
+}
+@media print, screen and (min-width: 768px) {
+  .page-id-43 #wrapper .article h5.reset-default {
+    font-size: auto;
+  }
+}
+.page-id-43 #wrapper .article ul.reset-default {
+  padding-left: 0;
+}
+.page-id-43 #wrapper .article ul.reset-default li {
+  font-size: auto;
+  padding-left: 0;
+}
+.page-id-43 #wrapper .article ul.reset-default li:before {
+  content: none;
+}
+@media print, screen and (min-width: 768px) {
+  .page-id-43 #wrapper .article ul.reset-default li {
+    font-size: auto;
+  }
+}
+.page-id-43 #wrapper .article h2 {
+  background: #D5D5D5;
+  color: #000;
+}
+.page-id-43 #wrapper .article dd {
+  margin-left: 0;
+}
+
+#wrapper .article .recruitmentAboutBox {
+  width: 116%;
+  margin-left: -8%;
+  display: block;
+  padding: 0 2em;
+  background: #F8EBDB;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox {
+    width: 100%;
+    margin-left: 0;
+    padding: 2em 0 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox .inBase__inner {
+  position: relative;
+}
+#wrapper .article .recruitmentAboutBox__title {
+  width: 70%;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__title {
+    width: 39%;
+  }
+}
+
+.accordionBox--typeRecruitmentAboutBox {
+  overflow: hidden;
+}
+@media print, screen and (min-width: 768px) {
+  .accordionBox--typeRecruitmentAboutBox {
+    overflow: visible;
+  }
+}
+
+.accordion--typeRecruitmentAboutBox label {
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox label {
+    cursor: auto;
+  }
+}
+.accordion--typeRecruitmentAboutBox__icon {
+  width: 1.5em;
+  height: 2px;
+  display: block;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  margin-top: -1px;
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox__icon {
+    display: none;
+  }
+}
+.accordion--typeRecruitmentAboutBox__icon div {
+  background: #D7231C;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.accordion--typeRecruitmentAboutBox__icon div:last-child {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.accordion--typeRecruitmentAboutBox input {
+  display: none;
+}
+.accordion--typeRecruitmentAboutBox__content {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+.accordion--typeRecruitmentAboutBox__content::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  background: #F8EBDB;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox__content::before {
+    content: none;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox__content {
+    height: auto;
+    opacity: 1;
+    padding: 0 5em;
+    overflow: visible;
+  }
+}
+.accordion--typeRecruitmentAboutBox__check:checked + label + .accordion--typeRecruitmentAboutBox__content {
+  height: auto;
+  padding: 0.9rem 1.8rem;
+  opacity: 1;
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox__check:checked + label + .accordion--typeRecruitmentAboutBox__content {
+    padding: 1.8rem 3.6rem;
+  }
+}
+.accordion--typeRecruitmentAboutBox__check:checked + label {
+  background: #FFF;
+  color: #000;
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox__check:checked + label {
+    background: unset;
+  }
+}
+.accordion--typeRecruitmentAboutBox__check:checked + label:hover {
+  background: #FFF;
+}
+@media print, screen and (min-width: 768px) {
+  .accordion--typeRecruitmentAboutBox__check:checked + label:hover {
+    background: unset;
+  }
+}
+.accordion--typeRecruitmentAboutBox__check:checked + label .accordion--typeRecruitmentAboutBox__icon div:last-child {
+  -webkit-transform: none;
+          transform: none;
+}
+
+#wrapper .article .recruitmentAboutBox {
+  display: block;
+  background: #F8EBDB;
+  margin-bottom: 4em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox {
+    margin-bottom: 10em;
+  }
+}
+#wrapper .article .recruitmentAboutBox .inBase__inner {
+  padding: 1em 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox .inBase__inner {
+    padding: 2em 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__title {
+  width: 80%;
+  font-size: 1em;
+  padding-top: 0;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__title {
+    width: 26.4em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__title img {
+  width: 100%;
+}
+#wrapper .article .recruitmentAboutBox__topImage {
+  width: 11.6em;
+  position: absolute;
+  top: 6.6em;
+  right: 0;
+  z-index: 3;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__topImage {
+    width: 37.5em;
+    top: -2em;
+    right: -3em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__topImage img {
+  width: 100%;
+}
+#wrapper .article .recruitmentAboutBox__inner {
+  display: block;
+  background: #FFF;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 2;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner {
+    border-radius: 1em;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__inner__content {
+  padding: 0 1.5em;
+  position: relative;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner__content {
+    padding: 0 5em;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner.--typeDuties01 {
+    padding-bottom: 0;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner.--typeDuties01 .recruitmentAboutBox__sectionImage {
+    position: static;
+    margin: -8em 1em 0 0;
+    float: right;
+  }
+}
+#wrapper .article .recruitmentAboutBox__inner.--typeDuties01 .recruitmentAboutBox__sectionImage img {
+  width: 100%;
+  margin-bottom: -1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner.--typeDuties01 .recruitmentAboutBox__sectionImage img {
+    margin-bottom: -2em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__inner.--typeDuties02 .recruitmentAboutBox__sectionImage {
+  width: 100%;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner.--typeDuties02 .recruitmentAboutBox__sectionImage {
+    width: 24em;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner.--typeDuties02 .recruitmentAboutBox__sectionImage {
+    right: 11em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__inner.--typeDuties05 .accordion--typeRecruitmentAboutBox__content::before {
+  background: #DEDEDE;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__inner.--typeDuties05 .accordion--typeRecruitmentAboutBox__content::before {
+    background: #F8EBDB;
+  }
+}
+#wrapper .article .recruitmentAboutBox h3.recruitmentAboutBox__sectionTitle {
+  display: block;
+  position: relative;
+  font-size: 1.375em;
+  padding: 2em 0 0 1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox h3.recruitmentAboutBox__sectionTitle {
+    font-size: 2.5em;
+    padding: 0 0 0 0.5em;
+  }
+}
+#wrapper .article .recruitmentAboutBox h3.recruitmentAboutBox__sectionTitle span {
+  font-size: 0.8em;
+  display: block;
+  width: 3em;
+  height: 1.8em;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 1.5em;
+  background: #D7231C;
+  color: #FFF;
+  border-radius: 0 0 0.5em 0.5em;
+  padding-top: 0.3em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox h3.recruitmentAboutBox__sectionTitle span {
+    font-size: 1em;
+    width: 2em;
+  }
+}
+#wrapper .article .recruitmentAboutBox h3.recruitmentAboutBox__sectionTitle b {
+  font-weight: 900;
+  color: #D7231C;
+  letter-spacing: 0.1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox h3.recruitmentAboutBox__sectionTitle b {
+    padding: 0.5em 0 0 3.5em;
+    display: block;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__list {
+    padding-left: 5.5em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__list li {
+  position: relative;
+  padding-left: 1.5em;
+  font-weight: 900;
+}
+#wrapper .article .recruitmentAboutBox__list li::before {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  display: block;
+  background: #D7231C;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+  border-radius: unset;
+}
+#wrapper .article .recruitmentAboutBox__stepBox {
+  display: block;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__stepBox {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl {
+  border: #D7231C solid 2px;
+  border-radius: 0.5em;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__stepBox dl {
+    width: 30%;
+    margin-bottom: 1em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl::before {
+  content: none;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  aspect-ratio: cos(30deg);
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background: #D7231C;
+  position: absolute;
+  left: 50%;
+  bottom: -1.5em;
+  margin-left: -0.75em;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__stepBox dl::before {
+    content: "";
+    right: -1.5em;
+    top: 50%;
+    left: unset;
+    bottom: unset;
+    margin-left: 0;
+    margin-top: -0.75em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl:last-child::before {
+  content: none;
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl:nth-child(1) dt span::before {
+  background: url(../img/recruitment/imgStep01.png) no-repeat center top;
+  background-size: 100% auto;
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl:nth-child(2) dt span::before {
+  background: url(../img/recruitment/imgStep02.png) no-repeat center top;
+  background-size: 100% auto;
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl:nth-child(3) dt span::before {
+  background: url(../img/recruitment/imgStep03.png) no-repeat center top;
+  background-size: 100% auto;
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl dt {
+  background: #D7231C;
+  color: #FFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.3em 1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__stepBox dl dt {
+    text-align: center;
+  }
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl dt span {
+  display: inline-block;
+  position: relative;
+  padding-left: 3.5em;
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl dt span::before {
+  width: 3em;
+  height: 1.5em;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+}
+#wrapper .article .recruitmentAboutBox__stepBox dl dd {
+  padding: 1em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__stepBox dl dd {
+    font-weight: 900;
+  }
+}
+#wrapper .article .recruitmentAboutBox__pointBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__pointBox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+#wrapper .article .recruitmentAboutBox__pointBox figure {
+  width: 3.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__pointBox figure {
+    width: 5em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__pointBox figure img {
+  width: 100%;
+}
+#wrapper .article .recruitmentAboutBox__pointBox p {
+  width: 90%;
+  font-size: 1.1em;
+  padding-left: 1em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+  color: #D7231C;
+  margin-bottom: 0;
+  letter-spacing: 0.1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__pointBox p {
+    font-size: 1.375em;
+    line-height: 1.5em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__sectionImage {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__sectionImage {
+    width: 24em;
+    position: absolute;
+    top: -8em;
+    right: 6em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__sectionImage img {
+  width: 100%;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__sectionImage img {
+    margin-bottom: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopBox {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: 2.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopBox {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-bottom: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopBox::before {
+  content: "";
+  display: block;
+  width: 112%;
+  height: 110%;
+  background: #DEDEDE;
+  position: absolute;
+  top: -10%;
+  left: -6%;
+  z-index: -1;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopBox::before {
+    width: 108%;
+    height: 180%;
+    left: -4%;
+    top: -40%;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopHead {
+  display: block;
+  margin-bottom: 1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopHead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopHead p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.125em;
+  position: relative;
+  margin-bottom: 1em;
+  line-height: 1.7em;
+  letter-spacing: 0.1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopHead p {
+    padding-left: 1.5em;
+    color: #D7231C;
+    margin-bottom: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopBoxTitle {
+  width: 50%;
+  margin-bottom: 3em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopBoxTitle {
+    width: 15.75em;
+    margin-bottom: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopImage {
+  width: 90%;
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: -4em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopImage {
+    width: 23.1em;
+    top: 0;
+    right: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopBoxTitle02 {
+  display: block;
+  text-align: center;
+  font-size: 1.19em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+  padding: 0;
+  color: #D7231C;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopBoxTitle02 {
+    color: #000;
+    font-size: 1.875em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopBoxTitle02::before {
+  content: none;
+}
+#wrapper .article .recruitmentAboutBox__shopBoxTitle02 span {
+  display: inline-block;
+  position: relative;
+}
+#wrapper .article .recruitmentAboutBox__shopBoxTitle02 span::before {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 1px;
+  background: #D7231C;
+  position: absolute;
+  top: 50%;
+  left: -4em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopBoxTitle02 span::before {
+    background: #000;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopBoxTitle02 span::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 1px;
+  background: #D7231C;
+  position: absolute;
+  top: 50%;
+  right: -4em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopBoxTitle02 span::after {
+    background: #000;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopList {
+    margin-bottom: 3em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopList dl {
+  width: 50%;
+  padding: 0 1em;
+  margin-bottom: 1.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopList dl {
+    width: 10.4em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__shopList dl dt {
+  display: block;
+  margin-bottom: 0.5em;
+}
+#wrapper .article .recruitmentAboutBox__shopList dl dt img {
+  width: 100%;
+}
+#wrapper .article .recruitmentAboutBox__shopList dl dd {
+  text-align: center;
+  background: #D7231C;
+  color: #FFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 0.3em;
+  padding: 0.3em 0.5em;
+  margin-top: -2em;
+  position: relative;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__shopList dl dd {
+    margin-top: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__companyBox {
+  display: block;
+  -webkit-box-ordinal-group: 1000;
+      -ms-flex-order: 999;
+          order: 999;
+  position: relative;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__companyBox {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle {
+  margin-bottom: 4.2em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__companyBoxTitle {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul {
+  display: block;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__companyBoxTitle + ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul li {
+  background: #D7231C;
+  padding: 0.5em 1em;
+  color: #FFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 0.5em;
+  text-align: center;
+  font-size: 1.625em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__companyBoxTitle + ul li {
+    padding: 0.5em 2em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul li b {
+  display: block;
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul li small {
+  display: block;
+  font-size: 0.69em;
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul li::before {
+  content: none;
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul + p {
+  font-size: 1.125em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 4em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__companyBoxTitle + ul + p {
+    padding-right: 12em;
+    letter-spacing: 0.1em;
+    margin-bottom: 2.5em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__companyBoxTitle + ul + p + figure {
+  width: 8.7em;
+  display: block;
+  position: absolute;
+  top: 4.5em;
+  left: 50%;
+  margin-left: -4.35em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__companyBoxTitle + ul + p + figure {
+    width: 12.4em;
+    top: unset;
+    left: unset;
+    margin-left: 0;
+    bottom: 1em;
+    right: 0;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBox {
+  width: 112%;
+  margin-left: -6%;
+  display: block;
+  background: #DEDEDE url(../img/recruitment/bgFullLine_sp.jpg) no-repeat center bottom;
+  background-size: 100% auto;
+  position: relative;
+  z-index: 1;
+}
+#wrapper .article .recruitmentAboutBox__strengthBox::before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 10em;
+  background: #DEDEDE;
+  position: absolute;
+  top: -3em;
+  left: 50%;
+  z-index: -1;
+  margin-left: -60%;
+  border-radius: 50%;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBox::before {
+    content: none;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBox {
+    width: 100%;
+    margin-left: 0;
+    background: #DEDEDE url(../img/recruitment/bgFullLine.jpg) no-repeat center bottom;
+    background-size: 100% auto;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBox .inBase__inner {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBox .inBase__inner {
+    width: 90%;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBox p {
+  font-size: 0.875em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin-bottom: 0.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBox p {
+    font-size: 1.125em;
+    font-weight: 600;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBox p b {
+  font-size: 1.3em;
+  display: block;
+  text-align: center;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBox p b {
+    text-align: left;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxLead {
+  font-size: 1em;
+  width: 90%;
+  margin: 0 auto 1em;
+  display: block;
+  padding: 0;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBoxLead {
+    width: 27.6em;
+    margin: 0 0 1em;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxLead::before, #wrapper .article .recruitmentAboutBox__strengthBoxLead::after {
+  content: none;
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxLead img {
+  width: 100%;
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxTitle {
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto 1em;
+  display: block;
+  padding: 0;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBoxTitle {
+    width: 41.75em;
+    margin: 0 0 1em;
+    display: block;
+  }
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxTitle::before {
+  content: none;
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxTitle img {
+  width: 100%;
+}
+#wrapper .article .recruitmentAboutBox__strengthBoxImage {
+  width: 100%;
+  display: block;
+  margin: 0 auto 10em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentAboutBox__strengthBoxImage {
+    width: 73%;
+    margin: -1em auto 2em;
+  }
+}
+
+#wrapper .article .recruitmentMessageBox {
+  margin-bottom: 3em;
+  display: block;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox {
+    margin-bottom: 6em;
+  }
+}
+#wrapper .article .recruitmentMessageBox .inBase__inner {
+  position: relative;
+}
+#wrapper .article .recruitmentMessageBox__image {
+  position: absolute;
+  top: 0;
+  right: 1.5em;
+  width: 10em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__image {
+    width: 21.9em;
+    right: 12.4em;
+  }
+}
+#wrapper .article .recruitmentMessageBox__image img {
+  width: 100%;
+}
+#wrapper .article .recruitmentMessageBox__name {
+  line-height: 1.7;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  position: absolute;
+  top: 10em;
+  left: 0;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__name {
+    position: absolute;
+    top: 22.5em;
+    right: 25em;
+    left: unset;
+  }
+}
+#wrapper .article .recruitmentMessageBox__name small {
+  display: inline-block;
+  margin-right: 1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__name small {
+    font-size: 0.875em;
+    display: block;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__name span {
+    display: block;
+    font-size: 1.375em;
+  }
+}
+#wrapper .article .recruitmentMessageBox__title {
+  font-size: 1em;
+  display: block;
+  text-align: left;
+  padding: 0;
+  position: relaitve;
+  color: #FFF;
+  margin-bottom: 9.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__title {
+    margin-bottom: 6em;
+  }
+}
+#wrapper .article .recruitmentMessageBox__title::before {
+  width: 112%;
+  height: 43.8em;
+  display: block;
+  content: "";
+  background: url(../img/recruitment/imgLine_sp.png) no-repeat center top;
+  background-size: 100% auto;
+  z-index: -1;
+  position: absolute;
+  top: -1.5em;
+  left: -6%;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__title::before {
+    width: 120em;
+    height: 43.8em;
+    background: url(../img/recruitment/imgLine.png) no-repeat center bottom;
+    background-size: 100% auto;
+    top: -6em;
+    left: -26.25em;
+  }
+}
+#wrapper .article .recruitmentMessageBox__title::after {
+  content: none;
+}
+#wrapper .article .recruitmentMessageBox__title small {
+  display: block;
+  font-size: 1.125em;
+}
+#wrapper .article .recruitmentMessageBox__title b {
+  font-size: 1.625em;
+  display: block;
+}
+#wrapper .article .recruitmentMessageBox__lead {
+  color: #D7231C;
+  font-size: 1.375em;
+  padding-left: 0;
+}
+#wrapper .article .recruitmentMessageBox__lead::before {
+  content: none;
+}
+#wrapper .article .recruitmentMessageBox__sentence {
+  font-size: 1.125em;
+  line-height: 2.3em;
+  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentMessageBox__sentence {
+    margin-bottom: 5em;
+  }
+}
+
+#wrapper .article .recruitmentExperienceBox {
+  margin-bottom: 2.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox {
+    margin-bottom: 5em;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__inner {
+  display: block;
+  position: relative;
+  background: #D7231C;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__inner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__inner > figure {
+  padding: 0 1em 1em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__inner > figure {
+    width: 52%;
+    padding: 0;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__content {
+  display: block;
+  padding: 2.5em 1.5em 1.5em;
+  position: relative;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__content {
+    width: 48%;
+    padding: 2.5em 0 2em 2.5em;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__title {
+  color: #FFF;
+  padding: 0;
+  text-align: left;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__title {
+    font-size: 2.5em;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__title::before {
+  content: none;
+}
+#wrapper .article .recruitmentExperienceBox__title::after {
+  content: none;
+}
+#wrapper .article .recruitmentExperienceBox__title + p {
+  font-size: 1.125em;
+  line-height: 1.7;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__title + p {
+    font-size: 1.375em;
+    text-align: left;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__title + p b {
+  color: #FFF;
+  display: inline-block;
+  padding-top: 1em;
+}
+#wrapper .article .recruitmentExperienceBox__fukidashi {
+  width: 10.75em;
+  display: block;
+  position: absolute;
+  bottom: -3em;
+  right: 0.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__fukidashi {
+    width: 16em;
+    bottom: unset;
+    top: 1.5em;
+    right: -6em;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__fukidashi img {
+  width: 100%;
+}
+#wrapper .article .recruitmentExperienceBox__information {
+  display: block;
+  background: #F8EBDB;
+  position: relative;
+  padding: 2.5em 0;
+}
+#wrapper .article .recruitmentExperienceBox__information > figure {
+  width: 7.2em;
+  position: absolute;
+  top: -20em;
+  left: -0.5em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__information > figure {
+    width: 12.5em;
+    top: -1em;
+    left: 5em;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__information dl {
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__information dl {
+    width: 75%;
+    margin: 0 0 2em 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__information dl dt {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__information dl dt {
+    padding-left: 0;
+  }
+}
+#wrapper .article .recruitmentExperienceBox__information dl dt span {
+  display: inline-block;
+  background: #D7231C;
+  color: #FFF;
+  padding: 0.1em 1em;
+  border-radius: 0.3em;
+}
+#wrapper .article .recruitmentExperienceBox__information dl dd {
+  padding-left: 2em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .article .recruitmentExperienceBox__information dl dd {
+    line-height: 1.9;
+  }
 }
 
 /*!
