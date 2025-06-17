@@ -1934,20 +1934,21 @@ _:lang(x) + _:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
   display: block;
   text-align: center;
   position: absolute;
-  top: 0;
+  top: 1em;
   right: 0;
-  width: 11em;
+  width: 7.7em;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .header__siteTitleBox dd {
     display: block;
     position: static;
+    width: 11em;
   }
 }
 #wrapper .header__siteTitleBox dd span {
   display: block;
   background: #D7231C;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #FFF;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
@@ -7352,13 +7353,13 @@ body.home .mainVisual__decorationCopy img {
 }
 #wrapper .article .recruitmentMessageBox__sentence {
   font-size: 1.125em;
-  line-height: 2.3em;
   margin-bottom: 2em;
-  letter-spacing: 0.1em;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .article .recruitmentMessageBox__sentence {
     margin-bottom: 5em;
+    line-height: 2.3em;
+    letter-spacing: 0.1em;
   }
 }
 
@@ -7521,6 +7522,12 @@ body.home .mainVisual__decorationCopy img {
   #wrapper .article .recruitmentExperienceBox__information dl dd {
     line-height: 1.9;
   }
+}
+#wrapper .article .recruitmentExperienceBox__information .wp-block-buttons {
+  margin-bottom: 0;
+}
+#wrapper .article .recruitmentExperienceBox__information .is-style-button-style-1 a {
+  margin-bottom: 0;
 }
 
 /*!
